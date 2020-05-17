@@ -1,0 +1,81 @@
+.FullClass{
+  margin:0px;
+}
+.Center{
+  padding:0px;
+  border-style:   solid solid none ;
+}
+.Active{
+  background-color: grey;
+}
+.Header{
+  border: 2px solid gray;
+}
+.Nodata{
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  padding:189px 0px 0px;
+}
+#artiststhumbnail{
+  width: auto;
+  height: 500px;
+  text-align: center
+}
+.TextAlign{
+  float: right;
+}
+.cls-test{
+  margin : 0px auto;
+  border-style:   solid solid none ;
+}
+.Ifclass{
+  border: 2px solid black;
+  background-color: hotpink;
+}
+.BtnWidht{
+ width: 120px; 
+ height:auto;
+}
+.ButtonDiv{
+text-align: center;
+padding: 10px;
+}
+
+.ButtonClass{
+  min-height: 500px;
+}
+.Input-icons { 
+  width: 100%; 
+  margin-bottom: 10px; 
+} 
+.Icon { 
+  padding: 10px 2px 0px; 
+} 
+.Input-field { 
+   padding: 5px ;
+  border: none;
+  outline-style: none;
+} 
+.cls-edit{
+  border: 1px solid green;
+  margin: auto;
+}
+.LeftIcon{
+  float: right;
+}
+.cls-head{
+  padding-left: 1px;
+}
+.Hide{
+  display:none;
+}
+.Show{
+  display: block;
+}
+a:hover { 
+  text-decoration: none; 
+}
+.paddinClass{
+  padding-left: 1px;
+} 
