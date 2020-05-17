@@ -68,6 +68,8 @@ class DataFound extends Component {
                                     <a href="#" onClick={(event)=>this.InputValueChange('updateIconValue',event,index)} className="Icon"  value="other"> (</a>
                                     <a href="#" onClick={(event)=>this.InputValueChange('updateIconValue',event,index)} className="Icon"  value="other"> ( </a>
                                     <a href="# " onClick={(event)=>this.InputValueChange('updateIconValue',event,index)}><i className="fa fa-exclamation Icon"  value = "exclamation" aria-hidden="true" ></i></a>
+
+                                    
                                 </span>
                             </div>
                             <div className={item.showIconDiv ? 'col-md-9 text-left' : 'col-md-8 text-left'}>
