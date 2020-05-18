@@ -3,13 +3,10 @@ import './App.css';
 import DataFound from './DataFound';
 
 class App extends Component {
-  constructor() {
-    super();
-  }
-
+  
   SetActiveState = (event) => {
     event.preventDefault();
-    let currentId = event.target.id;
+    //let currentId = event.target.id;
     alert("update " + event.target.id + " ID : "+ event.target.ref );
   }
 

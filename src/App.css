@@ -53,9 +53,10 @@ padding: 10px;
   padding: 10px 2px 0px; 
 } 
 .Input-field { 
-   padding: 5px ;
+  padding: 5px ;
   border: none;
   outline-style: none;
+  width: 100%;
 } 
 .cls-edit{
   border: 1px solid green;
@@ -79,3 +80,6 @@ a:hover {
 .paddinClass{
   padding-left: 1px;
 } 
+input:disabled {
+  background: white;
+}
