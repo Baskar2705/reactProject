@@ -3,7 +3,8 @@
 }
 .Center{
   padding:0px;
-  border-style:   solid solid none ;
+  border: 1px solid grey;
+  border-bottom: 0px;
 }
 .Active{
   background-color: grey;
@@ -24,10 +25,6 @@
 }
 .TextAlign{
   float: right;
-}
-.cls-test{
-  margin : 0px auto;
-  border-style:   solid solid none ;
 }
 .Ifclass{
   border: 2px solid black;
@@ -59,14 +56,10 @@ padding: 10px;
   width: 100%;
 } 
 .cls-edit{
-  border: 1px solid green;
+  border: 1px solid gray;
+  border-left: 0px;
+  border-right: 0px;
   margin: auto;
-}
-.LeftIcon{
-  float: right;
-}
-.cls-head{
-  padding-left: 1px;
 }
 .Hide{
   display:none;
@@ -80,6 +73,9 @@ a:hover {
 .paddinClass{
   padding-left: 1px;
 } 
-input:disabled {
-  background: white;
+.borderMainbox{
+  border:2px solid blue ;
+}
+.borderbox{
+  border-bottom:1px solid red ;
 }
