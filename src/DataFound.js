@@ -61,10 +61,10 @@ class DataFound extends Component {
     }
    
     ConditionalOperatorCheck(ev,index,currentValue) {
-        let currenId = "div"+index;
         let previosValue = document.querySelectorAll('.masterDiv .ButtonDiv button');
         previosValue = previosValue[document.querySelectorAll('.masterDiv .ButtonDiv button').length-2].value;
         var element = document.getElementById("drag"+index);
+        element.classList.remove("borderbox");     
         if(currentValue == previosValue){
             element.classList.add("borderbox");     
             this.masterDivClass =  '';
@@ -75,7 +75,6 @@ class DataFound extends Component {
     }
 
     Addcondition = () => {
-        
         this.masterDivClass =  '';
         var InValueChanges = this.state.operator;
         if(InValueChanges.length>7){
@@ -115,7 +114,6 @@ class DataFound extends Component {
                 <div className={this.masterDivClass}>
                 {
                     this.state.operator.length > 0 ? this.state.operator.map((item, index) => (
-
                         <div className="masterDiv">
                             <div id={'div' + index} onDrop={this.Drop} onDragOver={this.AllowDrop}>
                                 <div id={'drag' + index} draggable="true" onDragStart={this.Drag} className=" cls-edit row">
@@ -134,10 +132,10 @@ class DataFound extends Component {
                                             <a href="# " attr="exclamation" onClick={(event) => this.InputValueChange('updateIconValue', event, index)}><i className="fa fa-exclamation Icon" aria-hidden="true" ></i></a>
                                         </span>
                                     </div>
-                                    <div className={item.showIconDiv ? 'col-md-9 ' : 'col-md-8 '}  >
+                                    <div className={item.showIconDiv ? 'col-md-9 mobilesmcenter ' : 'col-md-8 mobilesmcenter'}  >
                                         <input maxlength="25" type="text" id={'inputValue_'+index} key={index} value={item.title} className="Input-field " onChange={(event) => this.InputValueChange('textChanges', event, index)} name="data" readOnly={item.readonly} onDoubleClick={(event) => this.InputValueChange('dbClick', event, index)} />
                                     </div>
-                                    <div className="col-md-2 text-right">
+                                    <div className="col-md-2 text-right mobilesmtwo">
                                         <span className={item.rightIcon ? 'Show' : 'Hide'}>
                                             {item.rightIconValue != 'other' ?
                                                 <a href="#" onClick={(event) => this.InputValueChange('rightClickPlus', event, index)}><i className={'fa fa-' + item.rightIconValue + ' Icon'} aria-hidden="true" ></i></a>

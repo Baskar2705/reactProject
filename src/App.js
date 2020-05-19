@@ -6,8 +6,6 @@ class App extends Component {
   
   SetActiveState = (event) => {
     event.preventDefault();
-    //let currentId = event.target.id;
-    alert("update " + event.target.id + " ID : "+ event.target.ref );
   }
 
   render() {
@@ -17,8 +15,10 @@ class App extends Component {
           <div className="col-sm-3"></div>
           <div className="col-sm-6 Center">
               <h3>If Node space test <i className="fa fa-close TextAlign" aria-hidden="true" ></i></h3>
-             {/* <span className="Ifclass">If</span>*/}
-             <span> If Node</span> 
+             <span className="transform"> 
+              {/* <span className="Ifclass">if</span> */}
+              <span> If Node </span> 
+            </span>
             <div className="row FullClass">
               <div className="col-sm-6 Header Active" id="Condition" onClick={this.SetActiveState}>Condition </div>
               <div className="col-sm-6 Header " id="Description" onClick={this.SetActiveState}>Description</div>

@@ -3,8 +3,10 @@
 }
 .Center{
   padding:0px;
-  border: 1px solid grey;
+  border: 2px solid blue;
   border-bottom: 0px;
+  
+  display: inline-block;
 }
 .Active{
   background-color: grey;
@@ -33,6 +35,8 @@
 .BtnWidht{
  width: 120px; 
  height:auto;
+ background-color: white;
+ color: blue;
 }
 .ButtonDiv{
 text-align: center;
@@ -74,8 +78,29 @@ a:hover {
   padding-left: 1px;
 } 
 .borderMainbox{
-  border:2px solid blue ;
+  border:1px solid blue ;
 }
 .borderbox{
   border-bottom:1px solid red ;
+}
+.fontMaintain{
+  font-size: 18px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+ .Center{
+   margin:0px 2px;
+ }
+  .Header{
+   width: 50% ;
+ }
+ .paddinClass{
+   width: 24%;
+ }
+ .mobilesmcenter{
+   width:55%;
+ }
+ .mobilesmtwo{
+   width: 20%;
+ }
 }
