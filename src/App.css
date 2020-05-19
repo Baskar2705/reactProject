@@ -27,6 +27,7 @@
 }
 .TextAlign{
   float: right;
+  padding-right: 5px;
 }
 .Ifclass{
   border: 2px solid black;
@@ -45,6 +46,7 @@ padding: 10px;
 
 .ButtonClass{
   min-height: 500px;
+  padding:3px 0px;
 }
 .Input-icons { 
   width: 100%; 
@@ -74,9 +76,6 @@ padding: 10px;
 a:hover { 
   text-decoration: none; 
 }
-.paddinClass{
-  padding-left: 1px;
-} 
 .borderMainbox{
   border:1px solid blue ;
 }
@@ -87,7 +86,13 @@ a:hover {
   font-size: 18px;
   font-weight: bold;
 }
-@media only screen and (max-width: 600px) {
+.mobilesmcenter{
+  padding:0px;
+}
+.paddinClass{
+  padding-right: 1px;
+}
+@media only screen and (max-width: 720px) {
  .Center{
    margin:0px 2px;
  }
@@ -96,6 +101,7 @@ a:hover {
  }
  .paddinClass{
    width: 24%;
+   padding-right: 1px;
  }
  .mobilesmcenter{
    width:55%;

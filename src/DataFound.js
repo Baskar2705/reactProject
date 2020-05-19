@@ -138,7 +138,7 @@ class DataFound extends Component {
                                     <div className="col-md-2 text-right mobilesmtwo">
                                         <span className={item.rightIcon ? 'Show' : 'Hide'}>
                                             {item.rightIconValue != 'other' ?
-                                                <a href="#" onClick={(event) => this.InputValueChange('rightClickPlus', event, index)}><i className={'fa fa-' + item.rightIconValue + ' Icon'} aria-hidden="true" ></i></a>
+                                                  <a href="#" onClick={(event) => this.InputValueChange('rightClickPlus', event, index)}><i className={'fa fa-' + item.rightIconValue + ' Icon'} aria-hidden="true" ></i></a>
                                                 : <a href="#" onClick={(event) => this.InputValueChange('rightClickPlus', event, index)} className="Icon" value="other"> ) </a>
                                             }
                                         </span>
