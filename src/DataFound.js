@@ -107,7 +107,7 @@ class DataFound extends Component {
         return (
             <div className="ButtonClass">
                 {StateValue.length > 0 &&
-                    <span>
+                    <span class="Newcondition">
                         <a href="#" onClick={this.Addcondition}><i className="fa fa-plus" aria-hidden="true" ></i> New Condition</a><br />
                     </span>
                 }

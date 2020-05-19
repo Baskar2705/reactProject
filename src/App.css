@@ -11,7 +11,10 @@
   background-color: grey;
 }
 .Header{
-  border: 2px solid gray;
+  border: 1px solid lightgray;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
 }
 .Nodata{
   width: 50px;
@@ -91,12 +94,30 @@ a:hover {
 .paddinClass{
   padding-right: 1px;
 }
+.bgcolor{
+  background-color: lightgray;
+}
+.Newcondition{
+  padding-left:14px;
+  font-size: bold;
+}
+.paddingLeft{
+  padding:16px 0px 3px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.transform{
+  padding:0px 0px 3px 10px;
+  display: block;
+}
 @media only screen and (max-width: 720px) {
  .Center{
    margin:0px 2px;
  }
   .Header{
    width: 50% ;
+   
  }
  .paddinClass{
    width: 24%;
