@@ -16,16 +16,20 @@ class App extends Component {
           <div className="col-sm-6 Center">
             <div className="bgcolor">
               <span className="paddingLeft">If node space test <span className="TextAlign"><i className="fa fa-close"></i></span></span>
-              <span className="transform ">
-                {/* <span className="Ifclass">if</span> */}
-                <span className=""> If node </span>
+              <span className="transform">
+                <div className="box">
+                  <span className="Ifclass"></span>
+                  <div className="text">
+                    IF
+                  </div>
+                </div>&nbsp;
+                <span className="">   If node </span>
               </span>
-              </div>
-              <div className="row FullClass">
-                <div className="col-sm-6 Header Active" id="Condition" onClick={this.SetActiveState}>Condition </div>
-                <div className="col-sm-6 Header " id="Description" onClick={this.SetActiveState}>Description</div>
-              </div>
-            
+            </div>
+            <div className="row FullClass">
+              <div className="col-sm-6 Header Active" id="Condition" onClick={this.SetActiveState}>Condition </div>
+              <div className="col-sm-6 Header " id="Description" onClick={this.SetActiveState}>Description</div>
+            </div>
             <DataFound />
           </div>
           <div className="col-sm-3"></div>

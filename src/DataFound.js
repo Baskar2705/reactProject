@@ -15,7 +15,7 @@ class DataFound extends Component {
             this.setState({ operator: storedValue });      
         }  
     }
-
+    // function to update state in case any action being performed
     InputValueChange(action, event, index, value) {
         var InValueChanges = this.state.operator;
         var source = '';
@@ -55,11 +55,11 @@ class DataFound extends Component {
         this.setState({ operator: InValueChanges });
         this.CreateStorage(InValueChanges);
     }
-
+    // funciton is used to maintain the local storage to store the value
     CreateStorage(value) {
         localStorage.setItem("operatorValue",JSON.stringify(value));
     }
-   
+    // validating the operator with previous div
     ConditionalOperatorCheck(ev,index,currentValue) {
         let previosValue = document.querySelectorAll('.masterDiv .ButtonDiv button');
         previosValue = previosValue[document.querySelectorAll('.masterDiv .ButtonDiv button').length-2].value;
@@ -73,7 +73,7 @@ class DataFound extends Component {
             element.classList.remove("borderbox");     
         }
     }
-
+    // use to add value in state operator
     Addcondition = () => {
         this.masterDivClass =  '';
         var InValueChanges = this.state.operator;
@@ -84,15 +84,15 @@ class DataFound extends Component {
         InValueChanges.push({ title: 'New Condtion Name', operation: 'and', icon: 'plus', showIconDiv: true, rightIcon: true, rightIconValue: 'plus', readonly: false});
         this.setState({ operator: InValueChanges });
     }
-
+    // drag and drop 
     AllowDrop = (ev) => {
         ev.preventDefault();
     }
-
+    // drag evenets handle
     Drag = (ev) => {
         ev.dataTransfer.setData("src", ev.target.id);
     }
-
+    // drop event handle
     Drop = (ev) => {
         ev.preventDefault();
         var src = document.getElementById(ev.dataTransfer.getData("src"));
@@ -101,7 +101,7 @@ class DataFound extends Component {
         ev.currentTarget.replaceChild(src, tgt);
         srcParent.appendChild(tgt);
     }
-
+    // react life cycle function render
     render() {
         let StateValue = this.state.operator;
         return (
@@ -129,7 +129,7 @@ class DataFound extends Component {
                                             <a href="#" attr="exclamation" onClick={(event) => this.InputValueChange('updateIconValue', event, index)} ><i className="fa fa-exclamation Icon" aria-hidden="true" ></i></a>
                                             <a href="#" attr="other" onClick={(event) => this.InputValueChange('updateIconValue', event, index)} className="Icon"> (</a>
                                             <a href="#" attr="other" onClick={(event) => this.InputValueChange('updateIconValue', event, index)} className="Icon"> ( </a>
-                                            <a href="# " attr="exclamation" onClick={(event) => this.InputValueChange('updateIconValue', event, index)}><i className="fa fa-exclamation Icon" aria-hidden="true" ></i></a>
+                                            <a href="# " attr="exclamation" onClick={(event) => this.InputValueChange('updateIconValue', event, index)}><i className="fa fa-exclamation Icon" aria-hidden="true"></i></a>
                                         </span>
                                     </div>
                                     <div className={item.showIconDiv ? 'col-md-9 mobilesmcenter ' : 'col-md-8 mobilesmcenter'}  >
@@ -143,8 +143,8 @@ class DataFound extends Component {
                                             }
                                         </span>
                                         <span className={item.rightIcon ? 'Hide' : 'Show'}>
-                                            <a attr="other" onClick={(event) => this.InputValueChange('rightClickBrack', event, index, item.operation)} href="#" > ) </a>
                                             <a href="#" onClick={(event) => this.InputValueChange('rightClickAction', event, index)} ><i id={index} className="fa fa-ban Icon " aria-hidden="true" ></i></a>
+                                            <a attr="other" onClick={(event) => this.InputValueChange('rightClickBrack', event, index, item.operation)} href="#" > ) </a>
                                         </span>
                                     </div>
                                 </div>
