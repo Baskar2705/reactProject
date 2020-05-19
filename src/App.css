@@ -98,8 +98,9 @@ a:hover {
   background-color: lightgray;
 }
 .Newcondition{
-  padding-left:14px;
+  padding:5px 0px 5px 15px;
   font-size: bold;
+  display:block;
 }
 .paddingLeft{
   padding:16px 0px 3px 10px;

@@ -81,7 +81,7 @@ class DataFound extends Component {
             alert("Limit Exceed!! ");
             return true;
         }
-        InValueChanges.push({ title: 'New Condtion Name', operation: 'and', icon: 'plus', showIconDiv: true, rightIcon: true, rightIconValue: 'plus', readonly: 'false'});
+        InValueChanges.push({ title: 'New Condtion Name', operation: 'and', icon: 'plus', showIconDiv: true, rightIcon: true, rightIconValue: 'plus', readonly: false});
         this.setState({ operator: InValueChanges });
     }
 
@@ -107,8 +107,8 @@ class DataFound extends Component {
         return (
             <div className="ButtonClass">
                 {StateValue.length > 0 &&
-                    <span class="Newcondition">
-                        <a href="#" onClick={this.Addcondition}><i className="fa fa-plus" aria-hidden="true" ></i> New Condition</a><br />
+                    <span className="Newcondition">
+                        <a href="#" onClick={this.Addcondition}><i className="fa fa-plus" aria-hidden="true" ></i>  New Condition</a><br />
                     </span>
                 }
                 <div className={this.masterDivClass}>
@@ -133,7 +133,7 @@ class DataFound extends Component {
                                         </span>
                                     </div>
                                     <div className={item.showIconDiv ? 'col-md-9 mobilesmcenter ' : 'col-md-8 mobilesmcenter'}  >
-                                        <input maxlength="25" type="text" id={'inputValue_'+index} key={index} value={item.title} className="Input-field " onChange={(event) => this.InputValueChange('textChanges', event, index)} name="data" readOnly={item.readonly} onDoubleClick={(event) => this.InputValueChange('dbClick', event, index)} />
+                                        <input maxLength="25" type="text" id={'inputValue_'+index} key={index} value={item.title} className="Input-field " onChange={(event) => this.InputValueChange('textChanges', event, index)} name="data" readOnly={item.readonly} onDoubleClick={(event) => this.InputValueChange('dbClick', event, index)} />
                                     </div>
                                     <div className="col-md-2 text-right mobilesmtwo">
                                         <span className={item.rightIcon ? 'Show' : 'Hide'}>

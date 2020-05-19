@@ -14,7 +14,7 @@ class App extends Component {
         <div className="row ">
           <div className="col-sm-3"></div>
           <div className="col-sm-6 Center">
-            <div class="bgcolor">
+            <div className="bgcolor">
               <span className="paddingLeft">If node space test <span className="TextAlign"><i className="fa fa-close"></i></span></span>
               <span className="transform ">
                 {/* <span className="Ifclass">if</span> */}
