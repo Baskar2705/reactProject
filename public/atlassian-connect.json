@@ -2,7 +2,7 @@
   "name": "Baskar",
   "description": "Atlassian Connect app",
   "key": "com.example.myapp",
-  "baseUrl": "https://929e7437.ngrok.io",
+  "baseUrl": "https://baskarnew2705.github.io/reactProject/",
   "vendor": {
       "name": "Example, Inc.",
       "url": "http://example.com"
