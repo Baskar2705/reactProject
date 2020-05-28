@@ -1,0 +1,26 @@
+{
+    "name": "Dashboard",
+    "description": "Atlassian Connect app",
+    "key": "com.example.myapp",
+    "baseUrl": "https://baskarnew2705.github.io/reactProject/",
+    "vendor": {
+        "name": "Example, Inc.",
+        "url": "http://example.com"
+    },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "generalPages": [
+            {
+                "url": "/index.html",
+                "key": "index",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Baskar"
+                }
+            }
+        ]
+    }
+  }
